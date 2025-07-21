@@ -43,7 +43,8 @@ export const getAllVideos = createAsyncThunk(
         url.searchParams.set("sortType", sortType);
       }
 
-      const response = await axiosInstance.get(url);
+      // const response = await axiosInstance.get(url);
+      const response = await axiosInstance.get(url.toString());
 
       return response.data.data;
     } catch (error) {
