@@ -79,8 +79,8 @@ const Sidebar = () => {
   };
   return (
     <>
-       <div className="sm:block hidden bg-black fixed top-16 left-0 h-[calc(100vh-64px)] z-10">
-        <div className="text-white lg:w-56 md:w-46 w-20 sm:p-3 p-2 border-slate-600 border-r h-full flex flex-col gap-45 justify-between overflow-y-auto">
+       <div className="sm:block hidden bg-black fixed top-16 left-0 h-screen-[80px] z-10">
+        <div className="text-white lg:w-56 md:w-46 w-20 sm:p-3 p-2 border-slate-600 border-r h-full flex flex-col gap-35 justify-between overflow-y-auto">
           <div className="flex flex-col gap-4 mt-0">
             {sidebarTopItems.map((item) => (
               <NavLink
